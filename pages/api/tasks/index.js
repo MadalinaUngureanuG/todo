@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       const tasks = await Task.find();
       res.status(200).json({ data: tasks });
     } catch (error) {
-      res.status(500).json({ message: "Internal Server Error" });
+      res.status(500).json({ message: "Something went wrong" });
       console.log(error);
     }
   }
