@@ -1,9 +1,9 @@
 import { useState } from "react";
 import {
   PencilFill,
+  Save,
   Trash3Fill,
   XCircleFill,
-  Save,
 } from "react-bootstrap-icons";
 import { server } from "../config/index";
 import taskItemStyles from "../styles/TaskItem.module.css";
@@ -60,12 +60,10 @@ export default function TaskItem(props) {
       textDecoration: "line-through",
       color: "green",
       fontWeight: "bold",
-      textTransform: "capitalize",
     },
     uncompletedTask: {
       textDecoration: "none",
       color: "white",
-      textTransform: "capitalize",
     },
   };
 
@@ -80,18 +78,22 @@ export default function TaskItem(props) {
     });
     setTask(task);
     setEditMode(false);
+    console.log(alert(`Change saved successfully!`));
   }
 
   return [
     !editMode ? (
-      <div className="flex-row d-flex">
+      <div className="flex-row d-flex align-items-center">
         <input
           type="checkbox"
           checked={task.completed}
           id="flexCheckDefault"
           onChange={() => onUpdate(task._id, event.target.checked)}
         />
-        <label htmlFor="flexCheckDefault" className="flex-grow-1 ms-2">
+        <label
+          htmlFor="flexCheckDefault"
+          className={taskItemStyles.flex + " flex-grow-1 mx-2"}
+        >
           <span
             className={taskItemStyles.child}
             style={
@@ -117,16 +119,17 @@ export default function TaskItem(props) {
         </button>
       </div>
     ) : (
-      <div>
+      <div className="d-flex align-items-center">
         <input
           type="text"
           value={taskName}
           onChange={() => {
             setTaskName(event.target.value);
           }}
+          className="flex-fill"
         />
         <button
-          className={taskItemStyles.button}
+          className={taskItemStyles.button + " ms-2"}
           title="Save"
           onClick={() => {
             onSave(task._id);

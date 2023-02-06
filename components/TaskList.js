@@ -1,6 +1,6 @@
-import TaskItem from "./TaskItem";
 import { ListGroup } from "react-bootstrap";
 import taskItemStyles from "../styles/TaskItem.module.css";
+import TaskItem from "./TaskItem";
 
 export default function TaskList(props) {
   const tasks = props.tasks;

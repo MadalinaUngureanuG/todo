@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { server } from "./../config/index";
 import newTaskStyles from "../styles/AddNewTask.module.css";
+import { server } from "./../config/index";
 
 export default function AddNewTask(props) {
   const addTask = props.data;
