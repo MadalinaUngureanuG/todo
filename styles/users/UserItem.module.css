@@ -1,0 +1,25 @@
+.item {
+    font-size: 1.2rem; 
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+
+.color {
+    background-color: rgba(0, 0, 78, 0.4);
+}
+
+.button {
+    width: 3.8rem;
+    height: 3.5rem;
+    border: none;
+    background-color: rgba(0, 0, 78, 0.4);
+}
+
+.size {
+    font-size: 1.5rem;
+}
+
+.badge {
+    width: 30px;
+    height: 25px;
+}

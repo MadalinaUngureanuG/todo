@@ -1,0 +1,16 @@
+.navbar {
+    background-color: rgb(39, 30, 104, 0.6);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 8rem;
+}
+
+.span {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
