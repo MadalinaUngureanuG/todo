@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   const { id } = req.query;
 
   // Connect to database
-  await dbConnect;
+  await dbConnect();
 
   // Update task
   if (method === "PUT") {

@@ -8,9 +8,21 @@
 }
 
 .main {
-  padding: 3rem 5rem;
+  padding: 3rem 0rem;
   font-size: 1.5rem;
   margin: 7rem;
   border-radius: 5px;
   background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 0.2%, rgba(110,123,251,1) 71.1% );
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #9bb8fd;
+  border: none;
+}
+
+.scroll:hover {
+  background: #6592fd;
 }

@@ -5,13 +5,8 @@
     margin-bottom: 0.1rem;
 }
 
-.child {
-  position: relative;
-  z-index: 1;
-}
-
 .color {
-    background-color: rgba(0, 0, 78, 0.3);
+    background-color: rgba(0, 0, 78, 0.5);
 }
 
 .button {
@@ -21,8 +16,3 @@
     background-color: rgba(0, 0, 78, 0.3);
     border-radius: 0.4rem;
 }
-
-.flex {
-    word-wrap: break-word;
-    word-break: break-all;
-  }

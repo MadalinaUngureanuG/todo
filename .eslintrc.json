@@ -8,7 +8,7 @@
     "node": true
   },
   "rules": {
-    "arrow-parens":  [true, "ban-single-arg-parens", "error", "as-needed"], 
+    "arrow-parens":  [1, "ban-single-arg-parens", "error", "as-needed"], 
      "react/no-unescaped-entities": "off",
      "@next/next/no-page-custom-font": "off"
   }

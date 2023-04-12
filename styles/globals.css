@@ -5,5 +5,47 @@ body {
   font-family: "Itim", serif!important;
 }
 
+.react-datepicker__tab-loop .react-datepicker-popper {
+  z-index: 2;
+}
 
+.width {
+  width: 40rem;
+  margin: 0rem 5rem;
+}
+
+.child {
+  position: relative;
+  z-index: 1;
+}
+
+.flex {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+#search {
+  border-radius: 2rem;
+  border: 1px solid blue;
+}
+
+.input-group .icon {
+  background: none;
+  border: none;
+  color: blue;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.input-group .icon:hover {
+  background: white;
+  color: blue;
+}
+
+#form {
+  border-right: none;
+  border-radius: 2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 
